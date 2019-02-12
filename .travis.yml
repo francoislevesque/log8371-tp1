@@ -1,0 +1,11 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+before_script:
+  - cd weka
+
+script:
+  - ant compile
+  - ant run_tests_core
