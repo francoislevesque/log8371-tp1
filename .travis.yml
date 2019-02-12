@@ -1,0 +1,6 @@
+language: java
+
+before_script:
+  - cd weka
+
+script: ant compile
