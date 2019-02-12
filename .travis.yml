@@ -6,4 +6,6 @@ jdk:
 before_script:
   - cd weka
 
-script: ant compile
+script:
+  - ant compile
+  - ant run_tests_core
