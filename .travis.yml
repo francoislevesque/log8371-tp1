@@ -8,4 +8,4 @@ before_script:
 
 script:
   - ant compile
-  - ant run_tests_core
+  - ant run_tests_five_algorithms
