@@ -10,10 +10,15 @@ import weka.test.WekaTestSuite;
 public class FiveAlgorithmsTests extends WekaTestSuite {
 
     public static Test suite() {
-        TestSuite suite = (TestSuite) suite("weka.filters.Filter");
 
-        suite.addTest(AllFilterTest.suite());
-        suite.addTest(MultiFilterTest.suite());
+        TestSuite suite = new TestSuite();
+
+        // Add tests for 5 selected algorithms.
+        suite.addTest(RenameRelationTest.suite());
+        suite.addTest(weka.filters.unsupervised.instance.RemoveFrequentValuesTest.suite());
+        suite.addTest(weka.filters.unsupervised.attribute.ObfuscateTest.suite());
+        suite.addTest(weka.filters.unsupervised.attribute.RemoveUselessTest.suite());
+        suite.addTest(weka.filters.unsupervised.attribute.AddNoiseTest.suite());
 
         return suite;
     }
