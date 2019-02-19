@@ -19,6 +19,9 @@ public class FiveAlgorithmsTests extends WekaTestSuite {
         System.err.println("*                      LOG8371 TP1                       *");
         System.err.println("*         RUNNING TESTS FOR 5 SELECTED ALGORITHMS        *");
         System.err.println("*                                                        *");
+        System.err.println("*   (RenameRelation, RemoveFrequentValues, Obfuscate,    *");
+        System.err.println("*               RemoveUseless & AddNoise)                *");
+        System.err.println("*                                                        *");
         System.err.println("**********************************************************");
         suite.addTest(RenameRelationTest.suite());
         suite.addTest(weka.filters.unsupervised.instance.RemoveFrequentValuesTest.suite());
