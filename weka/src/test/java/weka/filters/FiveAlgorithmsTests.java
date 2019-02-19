@@ -14,6 +14,12 @@ public class FiveAlgorithmsTests extends WekaTestSuite {
         TestSuite suite = new TestSuite();
 
         // Add tests for 5 selected algorithms.
+        System.err.println("**********************************************************");
+        System.err.println("*                                                        *");
+        System.err.println("*                      LOG8371 TP1                       *");
+        System.err.println("*         RUNNING TESTS FOR 5 SELECTED ALGORITHMS        *");
+        System.err.println("*                                                        *");
+        System.err.println("**********************************************************");
         suite.addTest(RenameRelationTest.suite());
         suite.addTest(weka.filters.unsupervised.instance.RemoveFrequentValuesTest.suite());
         suite.addTest(weka.filters.unsupervised.attribute.ObfuscateTest.suite());
