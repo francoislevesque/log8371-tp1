@@ -12,7 +12,7 @@ public class FiveAlgorithmsTests extends TestSuite {
         TestSuite suite = new TestSuite();
 
         // filters
-        suite.addTest(weka.filters.AllTests.suite());
+        suite.addTest(weka.filters.FiveAlgorithmsTests.suite());
 
         return suite;
     }
