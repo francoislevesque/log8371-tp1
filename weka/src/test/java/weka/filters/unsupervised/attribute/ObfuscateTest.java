@@ -56,7 +56,6 @@ public class ObfuscateTest extends AbstractFilterTest {
     // Number of attributes and instances shouldn't change
     assertEquals(m_Instances.numAttributes(), result.numAttributes());
     assertEquals(m_Instances.numInstances(), result.numInstances());
-    assertEquals(false, true);
     
     assertTrue(!m_Instances.relationName().equals(result.relationName()));
     for (int i = 0; i < m_Instances.numAttributes(); i++) {
