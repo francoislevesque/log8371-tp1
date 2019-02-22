@@ -16,11 +16,12 @@ public class FiveAlgorithmsTests extends WekaTestSuite {
         // Add tests for 5 selected algorithms.
         System.err.println("**********************************************************");
         System.err.println("*                                                        *");
-        System.err.println("*                      LOG8371 TP1                       *");
+        System.err.println("*               LOG8371 TP1 - QUESTION 4                 *");
         System.err.println("*         RUNNING TESTS FOR 5 SELECTED ALGORITHMS        *");
+        System.err.println("*             + 1 ADDED ALGORITHM (DISCRETIZE)           *");
         System.err.println("*                                                        *");
         System.err.println("*   (RenameRelation, RemoveFrequentValues, Obfuscate,    *");
-        System.err.println("*               RemoveUseless & AddNoise)                *");
+        System.err.println("*         RemoveUseless, AddNoise & Discretize)          *");
         System.err.println("*                                                        *");
         System.err.println("**********************************************************");
         suite.addTest(RenameRelationTest.suite());
@@ -28,6 +29,7 @@ public class FiveAlgorithmsTests extends WekaTestSuite {
         suite.addTest(weka.filters.unsupervised.attribute.ObfuscateTest.suite());
         suite.addTest(weka.filters.unsupervised.attribute.RemoveUselessTest.suite());
         suite.addTest(weka.filters.unsupervised.attribute.AddNoiseTest.suite());
+        suite.addTest(weka.filters.unsupervised.attribute.DiscretizeTest.suite());
 
         return suite;
     }
