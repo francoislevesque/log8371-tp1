@@ -97,6 +97,7 @@ public class DiscretizeTest extends AbstractFilterTest {
       } else {
         assertEquals(Attribute.NOMINAL, result.attribute(i).type());
         assertEquals(10, result.attribute(i).numValues());
+        assertEquals(false, true);
       }
     }
   }
